@@ -7,7 +7,15 @@ def viewbook(request, bookId):
  return render(request, 'bookmodule/one_book.html')
 def aboutus(request):
  return render(request, 'bookmodule/aboutus.html')
-
+def links(request):
+ return render(request, 'bookmodule/html5/links.html')
+def text_formatting(request):
+ return render(request, 'bookmodule/html5/text_formatting.html')
+def lists(request):
+ return render(request, 'bookmodule/html5/lists.html')
+def tables(request):
+ return render(request, 'bookmodule/html5/tables.html')
+ 
 
 
 

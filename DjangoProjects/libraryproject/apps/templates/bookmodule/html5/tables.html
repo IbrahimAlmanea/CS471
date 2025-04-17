@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    {% load static %}
+    <head>
+        <title>Tables</title>
+        <style>
+            .table1 {
+                border: 1px solid black;
+                text-align: center;
+            }
+            .table2 {
+                border: 1px solid black;
+                border-collapse: collapse;
+                text-align: center;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="table1" style="justify-self: center;">
+            <caption><b>Table 1: Table of Fruits and Their Ptices</b></caption>
+            <tr>
+                <th class="table1"> Fruit</th>
+                <th class="table1"> Price</th>
+            </tr>
+            <tr>
+                <td class="table1"> Apple</td>
+                <td class="table1"> $0.25</td>
+            </tr>
+            <tr>
+                <td class="table1"> Orange</td>
+                <td class="table1"> $0.50</td>
+            </tr>            
+            <tr>
+                <td class="table1"> Banana</td>
+                <td class="table1"> $1.00</td>
+            </tr>            
+            <tr>
+                <td class="table1"> Pineapple</td>
+                <td class="table1"> $2.00</td>
+            </tr>            
+            <tr>
+                <td class="table1"> <b>Total</b></td>
+                <td class="table1"> <b>$3.75</b></td>
+            </tr>
+        </table>
+
+        <br>
+
+        <table class="table2" style="justify-self: center;">
+            <caption>Table 2: A more complex sample table</caption>
+            <tr>
+                <th class="table2" rowspan="2"><img src="{% static 'tables.png' %}" alt="desert"></th>
+                <th class="table2" colspan="4">Camelid comarison <br> Approxmate as of 6/2011</th>
+            </tr>
+            <tr>
+                <th class="table2"># of humps</th>
+                <th class="table2">Indigenous region</th>
+                <th class="table2">Spits?</th>
+                <th class="table2">Produces wool?</th>
+            </tr>
+            <tr>
+                <th class="table2">Dromedary</th>
+                <td class="table2">1</td>
+                <td class="table2">Arabian Peninsula</td>
+                <td class="table2">yes</td>
+                <td class="table2">yes</td>
+            </tr>
+            <tr>
+                <th class="table2">Camels (bactrain)</th>
+                <td class="table2">2</td>
+                <td class="table2">Africa/Asia</td>
+                <td class="table2">yes</td>
+                <td class="table2">yes</td>
+            </tr>
+            <tr>
+                <th class="table2">Llamas</th>
+                <td class="table2">1</td>
+                <td class="table2">Andes Mountains</td>
+                <td class="table2">yes</td>
+                <td class="table2">yes</td>
+            </tr>
+        </table>
+    </body>
+</html>
