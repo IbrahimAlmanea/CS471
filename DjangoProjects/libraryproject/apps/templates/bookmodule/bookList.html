@@ -7,6 +7,7 @@
 {% endblock stylesheets %}
 
 {% block content %}
+
     <h1>Book List</h1>
     <ul>
     {% for book in books %}
@@ -15,4 +16,10 @@
         <li>No books available.</li>
     {% endfor %}
     </ul>
+    
+    {% for obj in books %}
+    ID: {{obj.id}}, Title: {{obj.title}}
+    <hr>
+    {% endfor %}
+
 {% endblock content %}
