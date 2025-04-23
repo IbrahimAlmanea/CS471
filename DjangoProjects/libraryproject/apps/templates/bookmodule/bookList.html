@@ -1,0 +1,18 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+{% block title %} 
+    Searching Page 
+{% endblock title %}
+{% block stylesheets %}
+{% endblock stylesheets %}
+
+{% block content %}
+    <h1>Book List</h1>
+    <ul>
+    {% for book in books %}
+        <li>{{ book }}</li>
+    {% empty %}
+        <li>No books available.</li>
+    {% endfor %}
+    </ul>
+{% endblock content %}
